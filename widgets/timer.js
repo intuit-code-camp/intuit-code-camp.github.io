@@ -1,8 +1,3 @@
-<html>
-<!-- Display the countdown timer in an element -->
-<p id="demo"></p>
-
-<script>
 // Set the date we're counting down to
 function setDate() {
     dateString = document.getElementById('userDate').value
@@ -37,11 +32,3 @@ var x = setInterval(function() {
         }
     }
 }, 1000);
-</script>
-
-<body>
-    <div> What date would you like to count down until? </div>
-    <input type="date" id="userDate"></input>
-    <button onClick="setDate()">enter</button>
-</body>
-</html>
