@@ -1,5 +1,5 @@
 <html>
-    <body>
+    <body onload="init()">
         <h1 class="header"> Header </h1>
 
         <img class="image" src="../img/cat.jpg"></img>
@@ -27,15 +27,11 @@
             <source src="../audio/cat_meow.mp3" type="audio/mpeg">
         </audio>
 
-        <script>
-            function myFunction() {
-                alert("Hello! I am an alert box!");
-            }
+        <!--Canvas-->
+        <canvas id="can" class="drawing" width="400" height="400"></canvas>
+        <button onclick="erase()">Erase</button>
 
-            function myFunction1() {
-                alert("Hello! I am a second alert box!");
-            }
-        </script>
+        <script type="text/javascript" src="../widgets/drawing.js"></script>
 
     </body>
 
@@ -57,6 +53,13 @@
 
         .button {
             padding-top: 30px;
+        }
+
+        .drawing {
+            border: 2px solid black;
+            position:absolute;
+            top:10%;
+            left:10%;
         }
     </style>
 </html>
